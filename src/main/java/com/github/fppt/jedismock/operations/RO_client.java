@@ -12,6 +12,7 @@ class RO_client extends AbstractRedisOperation {
   }
 
   Slice response() {
-      return Response.bulkString(Slice.create("OK"));
+      Slice key = params().get(1);
+      return Response.bulkString(key);
   }
 }
