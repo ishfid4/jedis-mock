@@ -22,3 +22,6 @@ target/
 # Debug files #
 dep.tree
 
+# Gradle Stuff
+.gradle
+build
